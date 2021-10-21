@@ -1,0 +1,101 @@
+<style>
+	body{
+		background-color: #F6F3EA;
+		margin: 0;
+	}
+	header{
+		position: fixed;
+		display: hidden;
+		top: 0;
+		width: 100%;
+		background-color: lightgray;
+	}
+	#main{
+		margin-top: 150px;
+	}
+	h2, pre{
+		text-align: center;
+	}
+	figure{
+		display: flex;
+		margin: 0;
+	}
+	#header-img{
+		max-width: 100px;
+		height: auto;
+	}
+	#fig-caption{
+		display: inline;
+		align-self: center;
+		color: orange;
+	}
+	#nav{
+		display: block;
+		margin: 0;
+	}
+	ul{
+		padding-left: 5px;
+		background-color: darkgray;
+	}
+	li{
+		display: inline;
+		list-style: none;	
+	}
+	a{
+		text-decoration: none;
+		font-weight: bold;
+		font-size: 18px;
+		padding: 10px;
+		color: orange;
+	}
+	a:hover{
+		color: black;
+	}
+	form{
+		text-align: center;
+	}
+	input{
+		padding: 8px;
+		margin: 10px;
+	}
+	@media (max-width: 680px){
+		iframe{
+			width: 350px;
+		}
+	}
+</style>
+<body id="home">
+<header id="header">
+	<figure>
+		<img id="header-img" src="https://upload.wikimedia.org/wikipedia/en/d/de/Logo_of_Institute_of_Science_and_Technology%2C_Bangladesh.png">
+		<figcaption id="fig-caption"><h2>Institute of Science and Technology</h2></figcaption>
+	</figure>
+	<nav id="nav-bar">
+		<ul id="nav">
+			<li><a class="nav-link" href="#home" active>Home</a></li>
+			<li><a class="nav-link" href="#main">About</a></li>
+			<li><a class="nav-link" href="#contact">Contact </a></li>
+		</ul>
+	</nav>
+</header>
+<main id="main">
+	<h2>History of IST</h2><hr>
+	<p>Institute of Science & Technology (IST) was established in 1993, the first Institute in Bangladesh conducting Honors in Computer Science affiliated with National University. It was founded by Prof. Dr. Shahida Rafique, University of Dhaka. Inaugurated in the presence of Nobel Laureate Professor Dr. Abdus Salam & by the then Honorable Prime Minister of Bangladesh. Its a completely non-profit, non-government and non-political Institute.</p>
+	<center><iframe id="video" width="680" height="300" src="https://www.youtube.com/watch?v=dHnPm5oxy_I" mute=1 autoplay=1></iframe></center> 
+	<form id="form" action="https://www.freecodecamp.com/email-submit">
+		<input id="email" type="email" name="email" placeholder="Enter valid email"><br>
+		<input id="submit" type="submit" name="submit" value="Submit">
+	</form>
+</main>	
+<footer>
+	<h2>Contact Us</h2><hr>
+	<pre id="contact">
+	House # 54, Road # 15A (old 26)
+	Dhanmondi, Dhaka-1209.
+	[East of Shankar Bus Stand]
+	Phone #+88 02-55029352, +88 02-55029353
+	Mobile # +8801726937910
+	Email # info@ist.edu.bd
+	</pre>
+</footer>
+</body>
